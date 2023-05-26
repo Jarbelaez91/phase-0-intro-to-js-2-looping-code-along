@@ -1,15 +1,15 @@
-// Code your solutions in this file
-function writeCards(names, event) {
-    let messages = [];
-    for(let i = 0; i < names.length; i++) {
-        messages.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+let names = ["Guadalupe", "Ollie", "Aki"]
+
+function writeCards(names) {
+    let cards = []
+    for (let i = 0; i < names.length; i++) {
+        cards[i] = `Thank you, ${names[i]}, for the wonderful surprise gift!`;
     }
-    return messages;
+    return cards;
 }
 
-function countDown(positiveNumber) {
-    while(positiveNumber >= 0) {
-        console.log(positiveNumber);
-        positiveNumber--;
+function countDown(number) {
+    while (number >= 0){
+    console.log(number--);
     }
 }
